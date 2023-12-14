@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log in | Tryst.link: Find independent</title>
 
     <!-- Include the Tailwind CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -36,6 +37,23 @@
     </nav>
 
     <!-- nav done -->
+
+    <!-- Error message -->
+
+    <div
+      class="alert md:mx-24 mx-5 my-5 bg-red-100 justify-between flex py-2 px-4"
+    >
+      <div>
+        We were unable to log you in using those credentials. Check that you
+        have typed your email address and password correctly.
+      </div>
+      <button
+        class="border text-center border-gray-400 px-2 bg-gray-100"
+        type="button"
+      >
+        <span> x </span>
+      </button>
+    </div>
 
     <div class="md:flex gap-14 md:px-24 px-5 mt-20">
       <div class="md:w-1/2 w-full">

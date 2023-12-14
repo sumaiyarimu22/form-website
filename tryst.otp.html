@@ -3,32 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log in | Tryst.link: Find independent</title>
+
+    <!-- Include the Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="main_wrapper header_bg">
-        <div class="wrapper fix">
-          <div class="header">
-            <div>
-              <img
-                src="https://app.tryyst.xyz/assets/toplogo.png"
-                alt="toplogo"
-              />
-            </div>
-            <div class="search floatleft">
-              <span></span>
-              <h3>Search</h3>
-            </div>
-            <div class="">
-              <a href="#">Login</a>
-              <span>or</span>
-              <a href="#">Sign up</a>
-            </div>
-          </div>
+    <nav
+      class="header_bg flex text-white justify-between items-center py-3 md:px-24 px-5"
+    >
+      <div class="flex gap-10 justify-between items-center">
+        <div class="w-32">
+          <img
+            src="https://app.tryyst.xyz/assets/toplogo.png"
+            alt="toplogo"
+            class=""
+          />
+        </div>
+        <div class="hidden md:inline-block">
+          <h3>Search</h3>
         </div>
       </div>
+      <div class="">
+        <a href="#">Login</a>
+        <span>or</span>
+        <a href="#">Sign up</a>
+      </div>
     </nav>
+
+    <!-- nav done -->
+
+    <!-- Error message -->
+
+    <div
+      class="alert md:mx-24 mx-5 my-5 bg-red-100 justify-between flex py-2 px-4"
+    >
+      <div>
+        We were unable to log you in using those credentials. Check that you
+        have typed your email address and password correctly.
+      </div>
+      <button class="" type="button">
+        <span> x </span>
+      </button>
+    </div>
+
+    <div class="md:px-24 px-5">
+      <div class="heading">
+        <h1 class="border-line font-medium">Enter emergency recovery code</h1>
+      </div>
+
+      <p class="text-sm my-20">
+        An emergency recovery code is one of the codes we showed you after you
+        <br />
+        set up 2-step login. Each emergency recovery code can be used exactly
+        <br />
+        once.
+      </p>
+
+      <div class="form-group md:w-1/2">
+        <label class="font-medium">Emergency recovery code</label>
+        <input
+          type="text"
+          placeholder="___-___-___-___"
+          required="required"
+          class="form-control form-control-lg"
+        />
+      </div>
+      <input
+        type="submit"
+        name="submit"
+        value="Authenticate"
+        class="py-2 px-10 my-10 rounded-full text-white red-bg text-2xl font-medium inline m-1"
+      />
+      <hr class="h-2" />
+      <p><a rel="nofollow" href="#">Log out instead</a></p>
+    </div>
+
+    <div class="md:px-24 px-5 my-5 md:my-10">
+      <div class="bottom_part">
+        <div class="w-56">
+          <img
+            src="https://app.tryyst.xyz/assets/bottomlogo.png"
+            alt="bottomlogo"
+            class="w-full"
+          />
+        </div>
+        <div class="w-56">
+          <img
+            src="https://app.tryyst.xyz/assets/avater.png"
+            alt="avater"
+            class="w-full"
+          />
+        </div>
+        <div class="locat">
+          <span>Melbourne, Australia</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="md:px-24 px-5 py-5 md:py-10 bg-black text-white">
+      <div class="footer">
+        <ul>
+          <li><a href="#">© 2022 Assembly Four</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Social</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
